@@ -1,0 +1,4 @@
+GET http://localhost:8080/api/v1/beer/b144ae09-f870-4c26-aaa5-a4d68911253f
+Accept: application/json
+
+###
