@@ -1,3 +1,7 @@
+GET http://localhost:8080/api/v1/customer/486925e9-347b-4d75-9b1e-eb11b93e57ff
+Accept: application/json
+
+###
 GET http://localhost:8080/api/v1/beer/b144ae09-f870-4c26-aaa5-a4d68911253f
 Accept: application/json
 
