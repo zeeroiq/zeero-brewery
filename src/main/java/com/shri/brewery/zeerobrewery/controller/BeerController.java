@@ -2,7 +2,7 @@ package com.shri.brewery.zeerobrewery.controller;
 
 
 import com.shri.brewery.zeerobrewery.model.BeerDto;
-import com.shri.brewery.zeerobrewery.service.BeerService;
+import com.shri.brewery.zeerobrewery.service.contracts.BeerService;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

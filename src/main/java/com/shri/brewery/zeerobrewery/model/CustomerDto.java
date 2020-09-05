@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Created by  ZeeroIQ on $today.date.
+ * Created by  ZeeroIQ.
  ******************************************************************************/
 
 package com.shri.brewery.zeerobrewery.model;
