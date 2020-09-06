@@ -18,3 +18,4 @@ public interface BeerService {
 
     void deleteBeer(UUID beerId);
 }
+
