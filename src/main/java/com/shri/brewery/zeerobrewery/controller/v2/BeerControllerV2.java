@@ -1,4 +1,4 @@
-package com.shri.brewery.zeerobrewery.controller;
+package com.shri.brewery.zeerobrewery.controller.v2;
 
 
 import com.shri.brewery.zeerobrewery.model.BeerDto;
@@ -8,16 +8,15 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/v1/beer")
-public class BeerController {
+@RequestMapping("/api/v2/beer")
+public class BeerControllerV2 {
 
     private BeerService beerService;
 
-    public BeerController(BeerService beerService) {
+    public BeerControllerV2(BeerService beerService) {
         this.beerService = beerService;
     }
 
@@ -28,7 +27,7 @@ public class BeerController {
     }
 
     @PostMapping
-    public ResponseEntity handlePost(@Valid @RequestBody BeerDto beerDto) {
+    public ResponseEntity handlePost(@RequestBody BeerDto beerDto) {
         BeerDto savedBeer = beerService.saveBeer(beerDto);
         HttpHeaders headers = new HttpHeaders();
         headers.add("Location", "/api/v1/beer/" + savedBeer.getId().toString());
@@ -37,7 +36,7 @@ public class BeerController {
     }
 
     @PutMapping("/{beerId}")
-    public ResponseEntity handleUpdate(@PathVariable("beerId") UUID beerId, @Valid @RequestBody BeerDto beerDto) {
+    public ResponseEntity handleUpdate(@PathVariable("beerId") UUID beerId, @RequestBody BeerDto beerDto) {
         beerService.updateBeer(beerId, beerDto);
         return new ResponseEntity(HttpStatus.NO_CONTENT);
     }
