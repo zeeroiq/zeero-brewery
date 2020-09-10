@@ -1,4 +1,4 @@
-package com.shri.brewery.zeerobrewery.beer;
+package com.shri.brewery.zeerobrewery.domain;
 
 /*
  * Created by  ZeeroIQ on 9/10/20, 10:34 PM

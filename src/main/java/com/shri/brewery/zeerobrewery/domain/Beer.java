@@ -1,4 +1,4 @@
-package com.shri.brewery.zeerobrewery.beer;
+package com.shri.brewery.zeerobrewery.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
