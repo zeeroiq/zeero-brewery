@@ -7,6 +7,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.sql.Timestamp;
+import java.time.OffsetDateTime;
 import java.util.UUID;
 
 @Data
@@ -20,4 +22,6 @@ public class BeerDto implements Serializable {
     private String beerStyle;
     private Long utc;
 
+    private OffsetDateTime createdOn;
+    private OffsetDateTime lastModifiedOn;
 }

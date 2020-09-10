@@ -7,7 +7,7 @@ import org.mapstruct.Mapper;
 /*
  * Created by  ZeeroIQ on 9/10/20, 10:35 PM
  */
-@Mapper
+@Mapper(uses = DateMapper.class)
 public interface BeerMapper {
 
     BeerDto BeerToBeerDto(Beer beer);
